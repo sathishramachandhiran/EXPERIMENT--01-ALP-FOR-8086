@@ -1,8 +1,9 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
+```
+Name : SATHISH R
+Roll no : 212222100048
+Date of experiment : 20/02/2024
+```
 
 
 
@@ -77,26 +78,99 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
-
-
+## Addition  
+```python
+org 100h
+mov al,024h;
+mov bl,al;
+add bl,al;
+mov [0123h],bl;
+ret
+```
 
 ## Output  
- 
-## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
+ ![OUTPUT](add.png)
+## Subtraction 
+```python
+org 100h
+mov al,024h;
+mov bl,[0123h+02];
+sub bl,al;
+mov [0123h+04],bl;
+ret
+```
+## Output
+![OUTPUT](sub.png)
+## Multiplication
+```python
+org 100h
+mov bx,0015h;
+mov al,[bx];
+mul bl;
+mov [0015h+04],al;
+ret
+```
  ## Output  
+![OUTPUT](mul.png)
 
-
-## Division alp 
-
+## Division
+```python
+org 100h
+mov bx,0040h;
+mov al,[bx+02];
+div bl;
+mov [0040h+04],al;
+ret
+```
 ## Output  
+![OUTPUT](div.png)
+## Programs for logical  operations
 
-
+## AND
+```python
+org 100h
+mov bx,1000h;
+and bx,1111h;
+mov [0040h+02],bx;
+ret
+```
+## Output 
+![OUTPUT](and.png)
+## OR
+```python
+org 100h
+mov ax,[0040h+06];
+mov bx,1000h;
+or ax,bx;
+mov [0040h+02],ax;
+ret
+```
+## Output
+![OUTPUT](or.png)
+## NOT
+```python
+org 100h
+mov bx,0040h;
+mov ax,[bx]; 
+not al;
+mov [0040h+04],ax;
+ret
+```
+## Output
+![OUTPUT](not.png)
+## XOR
+```python
+org 100h
+mov bx,0040h;
+mov ax,[bx]; 
+xor ax,bx;
+mov [0040h+04],ax;
+ret
+```
+## Output
+![OUTPUT](xor.png)
 ## Result :
- 
+Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
 
 
 
