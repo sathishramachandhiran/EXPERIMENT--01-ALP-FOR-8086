@@ -1,9 +1,8 @@
-# EXPERIMENT 01- ARITHMETIC OPERATION AND LOGICAL OPERATION IN 8086
-
 ```
 Name : SATHISH R
 Roll no : 212222100048
 ```
+# EXPERIMENT 01- ARITHMETIC OPERATION AND LOGICAL OPERATION IN 8086
 
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
